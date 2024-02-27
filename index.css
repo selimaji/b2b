@@ -1,0 +1,491 @@
+body {
+    margin: 0;
+    padding-bottom: 50px;
+}
+
+.topHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 30px;
+    z-index: 10;
+}
+
+.topHeader a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+}
+
+.topHeader a:hover {
+    padding: 4px 0;
+    border-bottom: 2px solid black;
+}
+
+
+.topHeader a.selected {
+    border-bottom-color: black;
+}
+
+.topperSection {
+    background: #0c0c9d;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    position: relative;
+    padding: 30px 0;
+}
+
+.decribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.decribeBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    text-align: center;
+}
+
+button {
+    color: black;
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+h4 {
+    padding-left: 14px;
+}
+
+.selectionContent {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.selectionContentBody {
+    display: flex;
+    align-items: start;
+    max-width: 500px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button h4, p {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.option {
+    background: white;
+    padding: 0;
+}
+
+.content {
+    display: none;
+}
+
+.selected {
+    border-bottom: 1px solid black;
+}
+
+.selectedContent {
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.selectedContent.option:hover {
+    opacity: 1;
+}
+
+.half-a-border-on-top {
+    width: 200px;
+    height: 4px;
+    background: red;
+    border-top-left-radius: 5px;
+}
+
+.apply {
+    background: red;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    background: white;
+    padding: 0 20px;
+    gap: 10px;
+    z-index: 10;
+}
+
+form p {
+    font-weight: 600;
+}
+
+input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+    padding-left: 35px;
+    border: 1px solid #e7e5e5;
+    width: 100%;
+}
+
+.loginSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: blue;
+}
+
+.inputParent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.loginBtn {
+    width: 100%;
+    background: #0dce0d;
+    color: white;
+    font-weight: 600;
+}
+
+.bottomForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px
+}
+
+.index4Svg {
+    top: 180px;
+    left: -10px;
+    position: absolute
+}
+
+.threeBackgroundImages {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    height: 100%;
+}
+
+.threeBackgroundImages img:nth-child(1) {
+    position: absolute;
+    margin-top: 120px;
+    min-height: 300px;
+}
+
+.threeBackgroundImages img:nth-child(2) {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 250px;
+    min-height: 200px;
+}
+
+.threeBackgroundImages img:nth-child(3) {
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 450px;
+    min-height: 200px;
+}
+
+
+.tableSection {
+    position: relative;
+    padding-left: 60px;
+}
+
+.contents img {
+    width: 700px;
+    height: 600px;
+}
+
+.tel {
+    font-weight: 600;
+}
+
+label {
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 486px) {
+    .topHeader a {
+        font-size: 12px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .contents img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .topperSection {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0;
+    }
+
+    .topperSection img:nth-child(2) {
+        top: 90px;
+        left: 0;
+        position: absolute;
+    }
+
+    .topperSection img:nth-child(3) {
+        top: 0;
+        /*left: 120px;*/
+        position: absolute;
+    }
+
+    form {
+        background: transparent;
+    }
+
+    form p {
+        color: white;
+        font-weight: 600;
+    }
+
+    .tel {
+        color: white;
+        font-weight: 600;
+    }
+
+    label {
+        color: white;
+        font-weight: 600;
+    }
+
+    .bottomForm svg {
+        display: none;
+    }
+
+    .threeBackgroundImages img:nth-child(3) {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 630px) {
+    .topperSection {
+        padding: 0;
+    }
+
+    .topperSection img:nth-child(1) {
+        top: 140px;
+        left: -10px;
+        position: absolute;
+    }
+
+    .topperSection img:nth-child(2) {
+        width: 250px;
+    }
+
+    .threeBackgroundImages img:nth-child(1) {
+        position: absolute;
+        margin-top: -100px;
+        width: 150px;
+        margin-left: -20px;
+    }
+
+    .threeBackgroundImages img:nth-child(2) {
+        position: absolute;
+        width: 100px;
+        margin-left: 130px;
+        top: 0;
+        min-height: 200px;
+    }
+
+    .threeBackgroundImages img:nth-child(3) {
+        position: absolute;
+        width: 100px;
+        left: -200px;
+        margin-top: 100px;
+        bottom: 0;
+    }
+
+    .phoneContainer {
+        grid-template-columns: 1fr 3fr;
+    }
+
+    form {
+        max-width: 300px;
+    }
+
+    .topHeader {
+        gap: 10px;
+        padding: 20px 5px
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .loginSection img {
+        display: none;
+    }
+
+    .selectionContent {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 796px) {
+
+    form {
+        background: transparent;
+    }
+
+    form p {
+        color: white;
+        font-weight: 600;
+    }
+
+    .tel {
+        color: white;
+        font-weight: 600;
+    }
+
+    label {
+        color: white;
+        font-weight: 600;
+    }
+
+    .bottomForm svg {
+        display: none;
+    }
+
+    .topperSection {
+        padding: 30px 0;
+    }
+
+    .loginSection img {
+        display: none;
+    }
+
+    .tableSection {
+        display: none;
+    }
+
+    .threeBackgroundImages img:nth-child(1) {
+        position: absolute;
+    }
+
+    .threeBackgroundImages img:nth-child(2) {
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    .threeBackgroundImages img:nth-child(3) {
+        position: absolute;
+        margin-top: 100px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .contents img {
+        width: 450px;
+        height: 380px;
+    }
+
+    .index4Svg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .index5Svg {
+        width: 350px;
+        height: 400px;
+    }
+
+    .decribe {
+        padding-bottom: 30px;
+    }
+
+    .threeBackgroundImages img:nth-child(1) {
+        position: absolute;
+        min-height: 250px;
+    }
+
+    .threeBackgroundImages img:nth-child(2) {
+        position: absolute;
+        margin-top: 200px;
+        min-height: 200px;
+    }
+
+    .threeBackgroundImages img:nth-child(3) {
+        position: absolute;
+        margin-top: 250px;
+        min-height: 200px;
+    }
+
+}
+
+
+.hind-vadodara-light {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.hind-vadodara-regular {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hind-vadodara-medium {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hind-vadodara-semibold {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.hind-vadodara-bold {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
